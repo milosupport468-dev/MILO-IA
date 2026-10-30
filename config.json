@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "name": "MILO IA",
+    "version": "1.0.0",
+    "language": "es-CO",
+    "timezone": "America/Bogota"
+  },
+  "discord": {
+    "enabled": true,
+    "prefix": ",",
+    "slashCommands": true,
+    "mentionChat": true
+  },
+  "ai": {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "maxRetries": 2
+  },
+  "website": {
+    "enabled": true,
+    "sessionTimeout": 1800000
+  },
+  "security": {
+    "antiInsults": true,
+    "antiNsfw": true,
+    "confirmationForSensitiveActions": true
+  },
+  "storage": {
+    "saveConversations": false,
+    "savePersonalMemories": false,
+    "backupFrequency": "weekly"
+  },
+  "images": {
+    "enabled": true,
+    "dailyLimitPerServer": 5,
+    "resetHours": 24
+  },
+  "premium": {
+    "enabled": true,
+    "currency": "COP",
+    "plans": {
+      "premium": 25000,
+      "premiumPlus": 50000
+    }
+  }
+}
