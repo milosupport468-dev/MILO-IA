@@ -1,0 +1,21 @@
+{
+  "name": "milo-ia",
+  "version": "1.0.0",
+  "description": "MILO IA - Asistente inteligente para Discord y web",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "express": "^5.1.0",
+    "dotenv": "^17.2.3",
+    "groq-sdk": "^0.33.0",
+    "cors": "^2.8.5",
+    "express-session": "^1.18.2"
+  }
+}
