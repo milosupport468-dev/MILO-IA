@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#08080d">
+    <meta name="description" content="MILO IA - Tu asistente inteligente para Discord.">
+    <title>MILO IA | Panel de control</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">M</div>
+            <div>
+                <h2>MILO IA</h2>
+                <span>Panel de control</span>
+            </div>
+        </div>
+
+        <p class="nav-title">GENERAL</p>
+
+        <nav class="nav-menu">
+            <button class="active" data-page="dashboard">🏠 Inicio</button>
+            <button data-page="servers">🌐 Servidores</button>
+            <button data-page="ai">🤖 Inteligencia artificial</button>
+        </nav>
+
+        <p class="nav-title">GESTIÓN</p>
+
+        <nav class="nav-menu">
+            <button data-page="tickets">🎫 Tickets</button>
+            <button data-page="moderation">🛡️ Moderación</button>
+            <button data-page="automations">⚡ Automatizaciones</button>
+            <button data-page="analytics">📊 Estadísticas</button>
+        </nav>
+
+        <p class="nav-title">CUENTA</p>
+
+        <nav class="nav-menu">
+            <button data-page="premium">💎 Premium</button>
+            <button data-page="account">👤 Mi cuenta</button>
+            <button data-page="settings">⚙️ Configuración</button>
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <h1 id="page-title">Inicio</h1>
+
+            <div class="user-profile">
+                <div class="avatar">👤</div>
+                <span id="username">Usuario</span>
+            </div>
+        </header>
+
+        <section class="content" id="app-content">
+
+            <div class="welcome">
+                <h2>Bienvenido a MILO IA</h2>
+                <p>Administra tus servidores y herramientas desde un solo lugar.</p>
+            </div>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h3>🌐 Servidores conectados</h3>
+                    <div class="stat" id="server-count">0</div>
+                    <p>Servidores disponibles en tu cuenta.</p>
+                </article>
+
+                <article class="card">
+                    <h3>🤖 Estado de MILO</h3>
+                    <div class="stat status-online">En línea</div>
+                    <p>Estado de conexión del asistente.</p>
+                </article>
+
+                <article class="card">
+                    <h3>💎 Suscripción</h3>
+                    <div class="stat">Free</div>
+                    <p>Consulta los planes disponibles.</p>
+                </article>
+
+            </div>
+
+            <div class="section">
+                <h2>Accesos rápidos</h2>
+
+                <div class="grid">
+                    <article class="card">
+                        <h3>🎫 Sistema de tickets</h3>
+                        <p>Configura paneles y atención al usuario.</p>
+                        <button class="primary-button" data-page="tickets">
+                            Administrar
+                        </button>
+                    </article>
+
+                    <article class="card">
+                        <h3>🛡️ Protección</h3>
+                        <p>Consulta las herramientas de moderación.</p>
+                        <button class="primary-button" data-page="moderation">
+                            Configurar
+                        </button>
+                    </article>
+
+                    <article class="card">
+                        <h3>⚡ Automatizaciones</h3>
+                        <p>Gestiona las tareas automáticas.</p>
+                        <button class="primary-button" data-page="automations">
+                            Explorar
+                        </button>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            MILO IA © 2026 — Tu asistente inteligente.
+        </footer>
+
+    </main>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
+                                                                </html>
