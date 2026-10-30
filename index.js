@@ -1069,10 +1069,9 @@ app.get("/invite", (req, res) => {
         `https://discord.com/oauth2/authorize?${params.toString()}`
     );
 });
-
-// ==================================================
-// PÁGINA PRINCIPAL
-// ==================================================
+ // ==================================================
+ // PÁGINA PRINCIPAL
+ // ==================================================
 
 app.get("/", (req, res) => {
     res.sendFile(
@@ -1104,6 +1103,18 @@ app.use((error, req, res, next) => {
     res.status(500).json({
         error: "Error interno del servidor."
     });
+});
+
+// ==================================================
+// CONFIRMACIÓN DE CONEXIÓN DISCORD
+// ==================================================
+
+client.once("ready", () => {
+    console.log("================================");
+    console.log("       MILO IA CONECTADO");
+    console.log("================================");
+    console.log("Bot:", client.user.tag);
+    console.log("Servidores:", client.guilds.cache.size);
 });
 
 // ==================================================
@@ -1146,12 +1157,13 @@ async function shutdown(signal) {
 
     console.log(`Cerrando MILO IA: ${signal}`);
 
-    server.close();
-
     client.destroy();
 
-    process.exit(0);
+    server.close(() => {
+        process.exit(0);
+    });
 }
 
 process.on("SIGTERM", () => shutdown("SIGTERM"));
 process.on("SIGINT", () => shutdown("SIGINT"));
+
